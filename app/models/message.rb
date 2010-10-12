@@ -2,7 +2,7 @@ class Message
   include Mongoid::Document
   include Mongoid::Timestamps
   
-  referenced_in :application, :inverse_of => :messages
+  referenced_in :app, :inverse_of => :messages
   
   field :from
   field :to

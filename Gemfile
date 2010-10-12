@@ -2,6 +2,28 @@ source 'http://rubygems.org'
 
 gem 'rails', '3.0.0'
 
+gem 'mongoid', '>= 2.0.0.beta.19'
+
+group :development do
+  gem 'rails3-generators'
+  gem "mongrel"
+  gem 'ruby-debug'
+  gem 'wirble'
+  gem 'web-app-theme', '>= 0.6.2', :git => 'git://github.com/budstikka/web-app-theme.git' # Nice theme
+end
+
+group :test do
+  gem 'capybara'
+  gem 'capybara-envjs', :require => 'capybara/envjs'
+  gem 'database_cleaner'
+  gem 'cucumber-rails', '>= 0.3.2'
+  gem 'spork'
+  gem 'launchy'
+  gem 'rspec-rails', '>= 2.0.0.beta.22'
+  gem 'syntax'
+end
+
+
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
